@@ -18,7 +18,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--screen_name',
                         type=str,
-                        default='screen_names.txt')
+                        default='screen_names.sample')
     args = parser.parse_args()
 
     with open(args.screen_name, mode='r') as f:
