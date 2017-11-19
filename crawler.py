@@ -5,12 +5,12 @@ from twitter.follow import follow
 
 
 def crawl_follower_ids(twitter, screen_name):
-    # get the entire list of followers user_ids for the user corresponding given screen_name
+    # get the entire list of follower user_ids for the user corresponding given screen_name
     return follow(twitter, screen_name, followers=True)
 
 
 def crawl_friends_ids(twitter, screen_name):
-    # get the entire list of user_ids
+    # get the entire list of friend user_ids
     return follow(twitter, screen_name, followers=False)
 
 
